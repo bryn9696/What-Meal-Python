@@ -4,4 +4,4 @@ from ingredients import ingredients
   #   expect(Ingredients.ingredients(["Cheese"])).to eq(['Cheese'])
   # end
 def test_ingredients() -> None:
-  assert ingredients(["Ham"]) != (["Ham"])
+  assert ingredients(["HAM"]) != (["Ham"])
