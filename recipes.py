@@ -6,5 +6,5 @@ class Recipes:
     cheese_toasty = ['Cheese', 'Bread', 'Butter']
     for i in ingredients_list:
       if i in cheese_toasty:
-        options.append("Cheese Toasty:")
+        options.append(f"Cheese Toasty: {', '.join(cheese_toasty)}")
     return options
