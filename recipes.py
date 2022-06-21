@@ -9,6 +9,7 @@ class Recipes:
   def all_ingredients(self):
     all_ing = self.cheese_toasty + self.ham_sandwhich
     all = list(dict.fromkeys(all_ing))
+    print(all)
     return all
 
   def cheese_toasty_dish(self, ingredients_list):

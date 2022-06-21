@@ -1,7 +1,13 @@
+import pytest
+import functools
 from recipes import Recipes
+
 
 def test_cheese_toasty() -> None:
   assert Recipes().cheese_toasty_dish(["Cheese"]) == (["Cheese Toasty: Cheese, Bread, Butter"])
+
+def test_cheese_toasty() -> None:
+  assert Recipes().cheese_toasty_dish(["Bread"]) == (["Cheese Toasty: Cheese, Bread, Butter"])
 
 def test_ham_sandwhich() -> None:
   assert Recipes().ham_sandwhich_dish(["Ham"]) == (['Ham Sandwhich: Ham, Bread, Butter'])
