@@ -16,3 +16,12 @@ class Recipes:
       if i in self.cheese_toasty:
         self.options.append(f"Cheese Toasty: {', '.join(self.cheese_toasty)}")
     return self.options
+
+  def ham_sandwhich_dish(self, ingredients_list):
+    for i in ingredients_list:
+      if i in self.ham_sandwhich:
+        self.options.append(f"Ham Sandwhich: {', '.join(self.ham_sandwhich)}")
+    return self.options
+
+  def choices(self, ingredients_list):
+    print(self.cheese_toasty_dish(ingredients_list))
