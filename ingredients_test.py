@@ -1,7 +1,5 @@
-from ingredients import ingredients
+from ingredients import Ingredients
 
-  # it 'returns inputted ingredient' do
-  #   expect(Ingredients.ingredients(["Cheese"])).to eq(['Cheese'])
-  # end
 def test_ingredients() -> None:
-  assert ingredients(["HAM"]) != (["Ham"])
+  i = Ingredients
+  assert i.ingredients(["HAM"]) != (["Ham"])
