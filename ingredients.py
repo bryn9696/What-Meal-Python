@@ -5,5 +5,5 @@ class Ingredients:
     for ing in ingredient_list:
       ing_string = str(ing).lower().capitalize()
       ing_list.append(ing_string)
-    # print(ing_list)
+      return ing_list
 
