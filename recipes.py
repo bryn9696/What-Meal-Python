@@ -25,4 +25,7 @@ class Recipes:
     return self.options
 
   def choices(self, ingredients_list):
-    print(self.cheese_toasty_dish(ingredients_list))
+    self.cheese_toasty_dish(ingredients_list)
+    self.ham_sandwhich_dish(ingredients_list)
+    return self.options
+

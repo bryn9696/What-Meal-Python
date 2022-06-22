@@ -15,5 +15,5 @@ def test_ham_sandwhich() -> None:
 def test_all_ingredients() -> None:
   assert Recipes().all_ingredients() == (['Cheese', 'Bread', 'Butter', 'Ham'])
 
-# def test_choices() -> None:
-#   assert Recipes().choices(["Ham"]) == (["Cheese Toasty: Cheese, Bread, Butter"])
+def test_choices() -> None:
+  assert Recipes().choices(["Ham", "Cheese"]) == (['Cheese Toasty: Cheese, Bread, Butter', 'Ham Sandwhich: Ham, Bread, Butter'])
