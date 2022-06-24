@@ -14,7 +14,7 @@ class Ingredients:
     print(len(spell_check))
     for x in spell_check:
       for i in range(0, len(ingredients_list), 1):
-        if 1<2: 
+        if ingredients_list[i] in x == True: 
           print('he', i)
           ingredients_list.pop(i)
           ingredients_list.insert(i, str(spell_check[i]))
