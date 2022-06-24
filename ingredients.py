@@ -11,15 +11,17 @@ class Ingredients:
   def dictionary(ingredients_list):
     recipes = Recipes().all_ingredients()
     spell_check = recipes
-    print(spell_check)
+    print(len(spell_check))
     for x in spell_check:
-      i = 0
-      if ingredients_list[i] in x:
-        ingredients_list.pop(i)
-        ingredients_list.append(str(spell_check[i]))
-      else:
-        print("HI")
-      i += 1
+      for i in range(0, len(ingredients_list), 1):
+        if 1<2: 
+          print('he', i)
+          ingredients_list.pop(i)
+          ingredients_list.insert(i, str(spell_check[i]))
+          print(ingredients_list)
+          print('hello', i)
+          # i = i+1
+        print(i)
     print(ingredients_list)
     return ingredients_list
     # for ing in spell_check:
