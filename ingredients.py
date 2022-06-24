@@ -11,27 +11,17 @@ class Ingredients:
   def dictionary(ingredients_list):
     recipes = Recipes().all_ingredients()
     spell_check = recipes
-    print(len(spell_check))
     for x in spell_check:
       for i in range(0, len(ingredients_list), 1):
+        # print(i, x)
+        # print(ingredients_list[i] in x)
         if ingredients_list[i] in x == True: 
-          print('he', i)
           ingredients_list.pop(i)
-          ingredients_list.insert(i, str(spell_check[i]))
-          print(ingredients_list)
-          print('hello', i)
-          # i = i+1
-        print(i)
-    print(ingredients_list)
-    return ingredients_list
-    # for ing in spell_check:
-    #   i = 0
-    #   if ing.chars().sort == ingredients_list[i].chars().sort():
-    #     ingredients_list.delete(ingredients_list[i])
-    #     ingredients_list << ing
-    #   i += 1
-    # print(recipes)
-    # ingredients_list.uniq.sort
+          ingredients_list.insert(i, str(x))
+        # else:
+    #       print("hi")
+    # print(sorted(ingredients_list))
+    return sorted(ingredients_list)
 
   def choice(ingredients_list):
     Recipes.new.choices(ingredients_list)
