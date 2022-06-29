@@ -9,8 +9,11 @@ def test_dictionary() -> None:
 def test_dictionary_one_item_not_first_in_spellcheck() -> None:
   assert Ingredients.dictionary(['Bread']) == (["Bread"])
 
+# def test_dictionary_one_item_not_spelt_correctly_in_spell_check() -> None:
+#   assert Ingredients.dictionary(['Egg']) == ([""])
+
 # def test_dictionary_one_item_not_spelt_correctly_in_spellcheck() -> None:
-#   assert Ingredients.dictionary(['Che']) == (["Cheese"])
+  # assert Ingredients.dictionary(['Che']) == (["Cheese"])
 
 def test_dictionary_two_items_returns_alphabetically() -> None:
   assert Ingredients.dictionary(['Cheese', 'Bread']) == (['Bread', 'Cheese'])

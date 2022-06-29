@@ -10,18 +10,16 @@ class Ingredients:
 
   def dictionary(ingredients_list):
     recipes = Recipes().all_ingredients()
-    spell_check = recipes
+    spell_check = sorted(recipes)
+    ingredients_list = sorted(ingredients_list)
     for x in spell_check:
       for i in range(0, len(ingredients_list), 1):
-        # print(i, x)
-        # print(ingredients_list[i] in x)
-        if ingredients_list[i] in x == True: 
+        if ingredients_list[i].find(x) >= 0:
           ingredients_list.pop(i)
           ingredients_list.insert(i, str(x))
-        # else:
-    #       print("hi")
-    # print(sorted(ingredients_list))
-    return sorted(ingredients_list)
+          print(ingredients_list)
+          print(ingredients_list, '****')
+    return ingredients_list
 
   def choice(ingredients_list):
     Recipes.new.choices(ingredients_list)
